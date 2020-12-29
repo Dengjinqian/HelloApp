@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./js/jquery-1.11.3.js"></script>
+</head>
+<body>
+    <div id="mint"></div>
+    <script>
+      async function InterfaceRequestFunction(url){
+        var reslut = await $.get(url);
+        console.log(reslut)
+      }
+      var url = 'https://jsonplaceholder.typicode.com/todos/3';
+      InterfaceRequestFunction(url)
+    </script>
+</body>
+</html>
